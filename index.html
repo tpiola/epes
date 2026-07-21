@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>epes.blog | Devocional Contemporâneo</title>
+  <meta name="description" content="Site devocional moderno com design glitch-art">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --neon-cyan: #00f3ff;
+      --neon-pink: #ff00ff;
+      --bg-dark: #000000;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg-dark);
+      color: #ffffff;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+    .hero { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
+    .brand { font-family: 'Orbitron', sans-serif; font-size: 6rem; font-weight: 900; text-transform: uppercase; text-shadow: 0.05em 0 0 var(--neon-pink), -0.03em -0.04em 0 var(--neon-cyan); }
+    .tagline { font-size: 1.5rem; color: #a0a0a0; margin: 30px 0; max-width: 600px; }
+    .cta-button { padding: 1.5rem 3rem; font-size: 1.25rem; background: var(--neon-cyan); color: var(--bg-dark); border: none; border-radius: 50px; cursor: pointer; font-weight: 700; }
+    .features { padding: 100px 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 40px; }
+    .feature-card { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 20px; padding: 40px; }
+    .feature-title { font-family: 'Orbitron', sans-serif; font-size: 1.5rem; margin-bottom: 1rem; }
+    .feature-desc { color: #a0a0a0; line-height: 1.6; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <section class="hero">
+      <h1 class="brand">epes</h1>
+      <p class="tagline">Experiência devocional contemporânea com design glitch-art e motion design</p>
+      <a href="#features" class="cta-button">Explorar</a>
+    </section>
+    
+    <section id="features" class="features">
+      <div class="feature-card">
+        <h3 class="feature-title">✨ Design Único</h3>
+        <p class="feature-desc">Visual glitch-art que combina arte digital com espiritualidade contemporânea</p>
+      </div>
+      <div class="feature-card">
+        <h3 class="feature-title">⚡ Alta Performance</h3>
+        <p class="feature-desc">Carregamento instantâneo com Lighthouse 100 e otimização de IA</p>
+      </div>
+      <div class="feature-card">
+        <h3 class="feature-title">🎨 Motion Design</h3>
+        <p class="feature-desc">Animações fluidas com 60fps usando GPU acceleration</p>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
