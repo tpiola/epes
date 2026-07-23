@@ -11,7 +11,7 @@ Reunir ao menos 500 pessoas em uma comunidade de oração no WhatsApp, com oraç
 - identidade sacra editorial: azul profundo, ouro envelhecido e marfim;
 - tipografia clássica com leitura contemporânea;
 - narrativa acolhedora, bíblica e sem promessas supersticiosas;
-- CTA único para o grupo oficial;
+- nove pontos de entrada contextuais para o grupo oficial, incluindo CTA flutuante;
 - arquitetura mobile-first, acessível e sem dependências de build;
 - imagens sacras próprias otimizadas em WebP;
 - SEO, Open Graph, dados estruturados e eventos de conversão preparados;
