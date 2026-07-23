@@ -109,6 +109,10 @@
     .hope-card{background:var(--ivory);box-shadow:var(--shadow);border-top:3px solid var(--gold);padding:25px 22px}
     .hope-card blockquote{margin:0;font:600 1.28rem/1.35 var(--serif);color:var(--night)}
     .hope-card cite{display:block;margin-top:12px;color:#8a6c35;font-style:normal;font-size:.68rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+    .conversion-strip{margin-top:34px;padding:22px;background:linear-gradient(135deg,#0b2445,#143966);color:#fff;border:1px solid rgba(214,182,111,.3);box-shadow:var(--shadow)}
+    .conversion-strip strong{display:block;font:600 1.45rem/1.25 var(--serif);color:var(--gold-light)}
+    .conversion-strip p{margin-top:8px;color:#c9d5e1;font-size:.8rem}
+    .conversion-strip .btn{width:100%;margin-top:18px}
 
     section{padding:78px 0}
     .section-title{font-size:clamp(2.5rem,11vw,4.7rem);color:var(--night);letter-spacing:-.04em;text-wrap:balance}
@@ -165,6 +169,8 @@
     footer{background:#031123;color:#aab9c8;padding:55px 0 calc(95px + env(safe-area-inset-bottom))}
     .footer-grid{display:grid;gap:30px}.footer-copy{font-size:.78rem;max-width:620px}.footer-copy p{margin-top:17px}.sources{color:#8194a6}.sources a{color:#b9c7d4}
     .mobile-cta{position:fixed;z-index:70;left:0;right:0;bottom:0;padding:10px max(14px,env(safe-area-inset-right)) max(10px,env(safe-area-inset-bottom)) max(14px,env(safe-area-inset-left));background:rgba(4,17,35,.92);backdrop-filter:blur(14px);border-top:1px solid rgba(255,255,255,.12)}.mobile-cta .btn{width:100%;min-height:54px}
+    .floating-cta{display:none;position:fixed;z-index:71;right:24px;bottom:24px;align-items:center;gap:10px;min-height:56px;padding:0 20px;border-radius:999px;background:var(--green);color:#fff;text-decoration:none;font-size:.72rem;font-weight:800;letter-spacing:.04em;box-shadow:0 14px 38px rgba(10,64,43,.36);transition:transform .2s var(--ease),background .2s}
+    .floating-cta:before{content:"◉";font-size:1rem}
 
     .load-in{opacity:0;transform:translateY(18px);animation:loadIn .75s var(--ease) forwards}.load-in:nth-child(2){animation-delay:.1s}.load-in:nth-child(3){animation-delay:.2s}.load-in:nth-child(4){animation-delay:.3s}
     .reveal{opacity:0;transform:translateY(25px);transition:opacity .7s var(--ease),transform .7s var(--ease)}.reveal.visible{opacity:1;transform:none}
@@ -179,9 +185,9 @@
       .hope-card cite{margin-top:0}.rhythm{grid-template-columns:1fr 1fr}.saint-track{grid-auto-columns:46%}.transformation .btn{width:auto;min-width:290px}
     }
     @media(min-width:820px){
-      body{padding-bottom:0}.menu-button,.mobile-menu,.mobile-cta{display:none}.nav-links{display:flex;align-items:center;gap:25px}.nav-links a{text-decoration:none;font-size:.7rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase}.nav-links .nav-cta{border:1px solid var(--gold);padding:11px 16px}
+      body{padding-bottom:0}.menu-button,.mobile-menu,.mobile-cta{display:none}.floating-cta{display:inline-flex}.nav-links{display:flex;align-items:center;gap:25px}.nav-links a{text-decoration:none;font-size:.7rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase}.nav-links .nav-cta{border:1px solid var(--gold);padding:11px 16px}
       .hero{min-height:820px;align-items:center}.hero-media img{object-position:center}.hero:before{background:linear-gradient(90deg,rgba(3,15,31,.95) 0%,rgba(3,15,31,.7) 48%,rgba(3,15,31,.1) 78%),linear-gradient(180deg,rgba(3,15,31,.2),rgba(3,15,31,.15) 68%,#06172e)}
-      .hero-content{padding:180px 0 100px}.hope-ribbon{margin-top:-42px}.hope-card{padding:30px 38px}.hope-card blockquote{font-size:1.55rem}
+      .hero-content{padding:180px 0 100px}.hope-ribbon{margin-top:-42px}.hope-card{padding:30px 38px}.hope-card blockquote{font-size:1.55rem}.conversion-strip{display:grid;grid-template-columns:1fr auto;align-items:center;gap:28px;padding:28px 32px}.conversion-strip .btn{width:auto;min-width:260px;margin-top:0}
       section{padding:105px 0}.welcome{grid-template-columns:.95fr 1.05fr;gap:70px;align-items:center}.welcome-art{min-height:610px}
       .countdown{padding-bottom:105px}.countdown-box{display:grid;grid-template-columns:.7fr 1.3fr;align-items:center;padding:36px 42px}.count-grid{margin-top:0}
       .rhythm{grid-template-columns:repeat(4,1fr);gap:16px}.stats{grid-template-columns:repeat(4,1fr)}.stat{border-bottom:0}.stat:nth-child(2){border-right:1px solid rgba(214,182,111,.2)}
@@ -189,7 +195,7 @@
       .story-grid{display:grid;grid-template-columns:1fr .86fr;gap:75px;align-items:start}.prayer{position:sticky;top:90px;margin-top:0;padding:42px}
       .faq-layout{grid-template-columns:.7fr 1.3fr;gap:75px}.footer-grid{grid-template-columns:1fr auto;align-items:end}
     }
-    @media(min-width:1100px){.nav-inner{height:84px}.hero h1{font-size:7.3rem}.saint:hover img{transform:scale(1.055)}.btn:hover{transform:translateY(-3px)}.btn-primary:hover{background:#0f7549;box-shadow:0 18px 45px rgba(23,137,87,.36)}}
+    @media(min-width:1100px){.nav-inner{height:84px}.hero h1{font-size:7.3rem}.saint:hover img{transform:scale(1.055)}.btn:hover,.floating-cta:hover{transform:translateY(-3px)}.btn-primary:hover,.floating-cta:hover{background:#0f7549;box-shadow:0 18px 45px rgba(23,137,87,.36)}}
     @media(pointer:coarse){.btn,.nav-links a,.faq summary{min-height:48px}}
     @media(prefers-reduced-motion:reduce){
       html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.reveal,.load-in{opacity:1;transform:none}#light-field{display:none}
@@ -260,6 +266,10 @@
           <p>Há dias em que a fé parece pequena. Há noites em que a preocupação fala mais alto. A SPES nasceu para transformar esse instante em encontro: pessoas reais, unidas no mesmo horário e na mesma intenção.</p>
           <p>Não prometemos atalhos nem respostas automáticas. Oferecemos algo antigo e verdadeiro: constância, Palavra, silêncio, intercessão e uma comunidade caminhando junto.</p>
           <div class="scripture">“Onde dois ou três estiverem reunidos em meu nome, ali estou eu no meio deles.” <small>— Mt 18,20</small></div>
+          <div class="conversion-strip">
+            <div><strong>Há um lugar reservado para a sua intenção.</strong><p>Entre gratuitamente e receba o primeiro aviso da jornada.</p></div>
+            <a class="btn btn-primary js-whatsapp" href="https://chat.whatsapp.com/HhX3hsFYl6v9ylOySJjX8F">Levar minha intenção →</a>
+          </div>
         </div>
       </div>
     </section>
@@ -289,6 +299,10 @@
           <div class="stat"><strong>40</strong><span>dias de oração</span></div><div class="stat"><strong>4h–6h</strong><span>janela diária</span></div>
           <div class="stat"><strong>1</strong><span>mensagem principal</span></div><div class="stat"><strong>500</strong><span>pessoas em unidade</span></div>
         </div>
+        <div class="conversion-strip reveal">
+          <div><strong>Comece a preparar o coração hoje.</strong><p>O grupo reúne orientações, lembretes e a oração diária da Quaresma de São Miguel.</p></div>
+          <a class="btn btn-primary js-whatsapp" href="https://chat.whatsapp.com/HhX3hsFYl6v9ylOySJjX8F">Participar dos 40 dias →</a>
+        </div>
       </div>
     </section>
 
@@ -314,6 +328,10 @@
           </article>
         </div>
         <p class="swipe">Deslize para conhecer →</p>
+        <div class="conversion-strip reveal">
+          <div><strong>Receba inspiração para perseverar.</strong><p>Caminhe com a comunidade e compartilhe esta devoção com quem precisa de esperança.</p></div>
+          <a class="btn btn-primary js-whatsapp" href="https://chat.whatsapp.com/HhX3hsFYl6v9ylOySJjX8F">Caminhar com a SPES →</a>
+        </div>
       </div>
     </section>
 
@@ -353,6 +371,10 @@
           <details class="reveal"><summary>E se eu perder um dia?</summary><p>Retome no dia seguinte, sem culpa. A jornada é uma escola de perseverança, não uma prova de perfeição.</p></details>
           <details class="reveal"><summary>Como será a convivência no WhatsApp?</summary><p>O grupo é moderado. Não são permitidas correntes, conteúdo político, propaganda, pedidos de dinheiro ou mensagens fora da proposta.</p></details>
           <details class="reveal"><summary>Isso substitui a Santa Missa?</summary><p>Não. A jornada é uma devoção e não substitui os sacramentos nem a vida paroquial. Aos domingos, incentivamos a Santa Missa.</p></details>
+          <div class="conversion-strip reveal">
+            <div><strong>Pronto para dizer o seu “sim”?</strong><p>Entre agora. É gratuito, moderado e dedicado exclusivamente à oração.</p></div>
+            <a class="btn btn-primary js-whatsapp" href="https://chat.whatsapp.com/HhX3hsFYl6v9ylOySJjX8F">Entrar no grupo agora →</a>
+          </div>
         </div>
       </div>
     </section>
@@ -371,6 +393,7 @@
   <div class="mobile-cta">
     <a class="btn btn-primary js-whatsapp" href="https://chat.whatsapp.com/HhX3hsFYl6v9ylOySJjX8F">Entrar no grupo de oração →</a>
   </div>
+  <a class="floating-cta js-whatsapp" href="https://chat.whatsapp.com/HhX3hsFYl6v9ylOySJjX8F" aria-label="Entrar no grupo de oração da SPES no WhatsApp">Entrar no grupo</a>
 
   <noscript><style>.reveal,.load-in{opacity:1;transform:none}#light-field{display:none}</style></noscript>
   <script>
